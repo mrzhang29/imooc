@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我与你同在（逻辑与操作符）</title>
+	</head>
+
+	<body>
+		<h1>我与你同在（逻辑与操作符）</h1>
+		<p>数学里面的“a&gt;b”，在JavaScript中还表示为a&gt;b；数学中的“b大于a，b小于c”是“a&lt;b&lt;c”，那么在JavaScript中可以用&&表示。如下：</p>
+		<p style="background: darkgrey;">b&gt;a && b&lt;c&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: red;">//“&&”是并且的意思, 读法"b大于a"并且" b小于c "</span></p>
+		<p>好比我们参加高考时,在进入考场前,必须出示准考证和身份证,两者缺一不可，否则不能参加考试，表示如下:</p>
+		<p style="background: darkgrey;">
+			if(有准考证 &&有身份证) <br /> { <br /> 进行考场考试
+			<br /> }
+			<br />
+		</p>
+		<p> “&&”是逻辑与操作符，只有“&&”两边值同时满足(同时为真)，整个表达式值才为真。</p>
+		<h2>逻辑与操作符值表:</h2>
+		<img src="img/javascprit2-9-1.jpg" />
+		<p style="color: red;">注意: 如果A为假，A && B为假，不会在执行B; 反之，如果A为真，要由 B 的值来决定 A && B 的值。</p>
+		<h2>任务</h2>
+		<p>JavaScript考试成绩中，numa（表示笔试）考了60分，numb（表示实践）考了70分，只有两项成绩都大于或等于60分，该课程考核就通过。</p>
+		<br />
+		<br />
+		<br />
+		<script type="text/javascript">
+			var numa, numb;
+			numa = 60;
+			numb = 70;
+			if(numa >= 60 && numb >= 60) {
+				document.write("JavaScript考核通过！" + "<br>");
+			}
+		</script>
+
+</html>

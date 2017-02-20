@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>较量较量(比较操作符)</title>
+
+	</head>
+
+	<body>
+		<h1>较量较量(比较操作符)</h1>
+		<p>我们先来做道数学题，数学考试成绩中，小明考了90分，小红考了95分，问谁考的分数高?
+答: 因为“95 > 90”，所以小红考试成绩高。</p>
+<p>其中大于号">" 就是比较操作符，小红考试成绩和小明考试成绩就是操作数，并且是两个操作数。<br />
+
+也就是说两个操作数通过比较操作符进行比较，得到值为真（true）和假(false)。<br />
+
+
+
+在JavaScript中，这样的比较操作符有很多，这些操作符的含义如下: </p>
+<img src="img/javascprit2-8-1.jpg" alt=""/>
+<p>看看下面例子: <br />
+var a = 5;//定义a变量，赋值为5<br />
+var b = 9; //定义b变量，赋值为9<br />
+document.write (a<b); //a小于b的值吗? 结果是真(true)<br />
+document.write (a>=b); //a大于或等于b的值吗? 结果是假(false)<br />
+document.write (a!=b); //a不等于b的值吗? 结果是真(true)<br />
+document.write (a==b); //a等于b的值吗? 结果是假(false)</p>
+<h2>任务</h2>
+
+<p>实验考试成绩中，numa考了1分，numb考了7分，我们来比较下它们的分数。</p>
+
+
+		<script type="text/javascript">
+			var numa, numb, jq1, jq2;
+			numa = 1;
+			numb = 7;
+			jq1 = numa>numb;
+			jq2 = numa!=numb;
+			document.write("numa大于numb的分数吗？" + jq1 + "<br>")
+			document.write("numa不等于numb的分数吗？" + jq2);
+		</script>
+	</body>
+
+</html>
