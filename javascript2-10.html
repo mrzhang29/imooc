@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我或你都可以 (逻辑或操作符）</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<h1>我或你都可以 (逻辑或操作符）</h1>
+		<p><code class="marker">"||"</code>逻辑或操作符，相当于生活中的“或者”，当两个条件中有任一个条件满足，“逻辑或”的运算结果就为“真”。</p>
+		<p><strong class="emfhasize">例如：</strong>本周我们计划出游,可是周一至周五工作,所以周六或者周日哪天去都可以。即两天中只要有一天有空，就可以出游了。</p>
+		<pre class="marker">
+			var a=3;
+			var b=5;
+			var c;
+			c=b>a ||a>b;  <span class="annotation">//b>a是true，a>b是false，c是true</span>
+		</pre>
+		<h2>逻辑或操作符值表:</h2>
+		<img src="img/javascprit2-10-1.jpg" alt="" />
+		<p><strong class="emfhasize">注意:</strong> 如果A为真，A || B为真，不会在执行B; 反之，如果A为假，要由 B 的值来决定 A || B 的值。</p>
+		<h2>任务：</h2>
+		<pre class="marker">
+			<script type="text/javascript">
+				var numa,numb,jq1;
+				numa=50;
+				numb=55;
+				jq1=  numa>numb||numa==numb       ;
+				document.write("jq1的值是:"+jq1+"<br>")
+			</script>
+		</pre>
+	</body>
+
+</html>

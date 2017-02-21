@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>是非颠倒(逻辑非操作符）</title>
+	</head>
+
+	<body>
+		<div class="main">
+			<h1>是非颠倒(逻辑非操作符）</h1>
+			<p><code class="marker">"!"</code>是逻辑非操作符，也就是"不是"的意思,非真即假，非假即真。好比小华今天买了一个杯子，小明说:"杯子是白色的"，小亮说:“杯子是红色的”，小华说："小明说的<code class="marker">不是真话</code>，小亮说的<code class="marker">不是假话</code>"。猜猜小华买的什么颜色的杯子，答案：红色杯子。</p>
+			<h2>逻辑非操作符值表:</h2>
+			<img src="img/javascprit2-11-1.jpg" alt="" />
+			<p>看看下面代码，变量c的值是什么:</p>
+			<pre class="marker">
+				var a=3;
+				var b=5;
+				var c;
+				c=!(b&gt;a);  <span class="annotation">// b&gt;a值是true,! (b&gt;a）值是false</span>
+				c=!(b&lt;a);  <span class="annotation">// b&lt;a值是false, ! (b&lt;a）值是true</span>
+			</pre>
+			<h2>任务</h2>
+			<script type="text/javascript">
+				var numa, numb, jq1;
+				numa = 60;
+				numb = 70;
+				jq1 = !(numa < numb);
+				document.write("jq1的值是:" + jq1 + "<br>")
+			</script>
+		</div>
+	</body>
+
+</html>
